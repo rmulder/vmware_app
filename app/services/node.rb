@@ -1,14 +1,16 @@
-class Node
-  def initialize(name)
-    @name = name
-    @children = []
-  end
+module NodeService
+  class Node
+    def initialize(name)
+      @name = name
+      @children = []
+    end
 
-  def name
-    @name
-  end
+    def name
+      @name
+    end
 
-  def children
-    @children
+    def children
+      @children
+    end
   end
 end

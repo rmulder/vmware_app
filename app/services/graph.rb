@@ -1,16 +1,30 @@
-require 'rgl/implicit'
+require 'singleton'
+
 class Graph
-  def module_graph
-    RGL::ImplicitGraph.new { |g|
-      g.vertex_iterator { |b|
-        ObjectSpace.each_object(Module, &b)
-      }
-      g.adjacent_iterator { |x, b|
-        x.ancestors.each { |y|
-          b.call(y) unless x == y || y == Kernel || y == Object
-        }
-      }
-      g.directed = true
-    }
+  include Singleton
+  
+  def initialize
+    @nodeMutex = Mutex.new
+    @nodeMap ||= {}
+  end
+
+  def synchronize(&block)
+    @cacheMutex.synchronize(&block)
+  end
+
+  def put(key, node)
+    synchronize do
+      if !@nodeMap.has_key?(key)
+        @nodeMap[key] = node
+      end
+
+      @nodeMap[key]
+    end
+  end
+
+  def get(key)
+    synchronize do
+      @nodeMap[key]
+    end
   end
 end

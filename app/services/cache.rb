@@ -9,11 +9,7 @@ class Cache
   end
 
   def synchronize(&block)
-    # to see what it does without the mutex in this example:
-    # 1) comment this line
     @cacheMutex.synchronize(&block)
-    # 2) uncomment this line
-    # yield
   end
 
   def put(key, value)
