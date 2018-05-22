@@ -1,0 +1,175 @@
+digraph RGL__DirectedAdjacencyGraph {
+    tom [
+        fontsize = 8,
+        label = tom
+    ]
+
+    jane [
+        fontsize = 8,
+        label = jane
+    ]
+
+    jill [
+        fontsize = 8,
+        label = jill
+    ]
+
+    bill [
+        fontsize = 8,
+        label = bill
+    ]
+
+    bob [
+        fontsize = 8,
+        label = bob
+    ]
+
+    jim [
+        fontsize = 8,
+        label = jim
+    ]
+
+    nancy [
+        fontsize = 8,
+        label = nancy
+    ]
+
+    susan [
+        fontsize = 8,
+        label = susan
+    ]
+
+    pete [
+        fontsize = 8,
+        label = pete
+    ]
+
+    ted [
+        fontsize = 8,
+        label = ted
+    ]
+
+    tom -> jane [
+        fontsize = 8
+    ]
+
+    tom -> jill [
+        fontsize = 8
+    ]
+
+    tom -> bill [
+        fontsize = 8
+    ]
+
+    jane -> jill [
+        fontsize = 8
+    ]
+
+    jane -> nancy [
+        fontsize = 8
+    ]
+
+    jane -> bob [
+        fontsize = 8
+    ]
+
+    jill -> bob [
+        fontsize = 8
+    ]
+
+    jill -> jane [
+        fontsize = 8
+    ]
+
+    jill -> tom [
+        fontsize = 8
+    ]
+
+    bill -> jill [
+        fontsize = 8
+    ]
+
+    bill -> jim [
+        fontsize = 8
+    ]
+
+    bill -> jane [
+        fontsize = 8
+    ]
+
+    bob -> tom [
+        fontsize = 8
+    ]
+
+    bob -> jill [
+        fontsize = 8
+    ]
+
+    bob -> nancy [
+        fontsize = 8
+    ]
+
+    bob -> jane [
+        fontsize = 8
+    ]
+
+    jim -> nancy [
+        fontsize = 8
+    ]
+
+    jim -> bob [
+        fontsize = 8
+    ]
+
+    jim -> susan [
+        fontsize = 8
+    ]
+
+    nancy -> jill [
+        fontsize = 8
+    ]
+
+    nancy -> jane [
+        fontsize = 8
+    ]
+
+    nancy -> jim [
+        fontsize = 8
+    ]
+
+    susan -> jim [
+        fontsize = 8
+    ]
+
+    susan -> jane [
+        fontsize = 8
+    ]
+
+    susan -> bill [
+        fontsize = 8
+    ]
+
+    pete -> bill [
+        fontsize = 8
+    ]
+
+    pete -> nancy [
+        fontsize = 8
+    ]
+
+    pete -> susan [
+        fontsize = 8
+    ]
+
+    ted -> pete [
+        fontsize = 8
+    ]
+
+    ted -> tom [
+        fontsize = 8
+    ]
+
+    ted -> bill [
+        fontsize = 8
+    ]
+}
