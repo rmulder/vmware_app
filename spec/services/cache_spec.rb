@@ -1,5 +1,4 @@
 require 'rails_helper.rb'
-require 'spec_helper'
 
 RSpec.describe "puts item into the cache" do
   cacheService = Cache.instance
